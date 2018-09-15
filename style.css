@@ -173,7 +173,7 @@ footer{  /*parent: container*/
 	height:10%;
 	margin:0;
 	display: flex; /* to center texts inside vertically and horizontally */
-    align-items: center; /* flex property */
+    align-items: right; /* flex property */
     justify-content: center; /* flex property */
 }
 
