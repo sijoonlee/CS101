@@ -144,7 +144,7 @@ div[id^="eventsList-"] td,th{
 		height:10%; 
 		display: flex; /* to center texts inside vertically and horizontally */
 		align-items: center; /* flex property */
-		justify-content: left; /* flex property */
+		justify-content: center; /* flex property */
 	}
 	#column-right{ /*parent: main*/
 		height:90%; 
@@ -171,10 +171,14 @@ footer{  /*parent: container*/
 	width:100%;
 	min-width:370px;
 	height:10%;
-	margin:0;
 	display: flex; /* to center texts inside vertically and horizontally */
-    align-items: right; /* flex property */
-    justify-content: center; /* flex property */
+    align-items: center; /* flex property */
+    justify-content: flex-end; /* flex property */
+}
+
+footer h4{
+	margin-right:1em;
+	color:rgb(100,100,100);
 }
 
 p, h1, h2, h3, h4, h5, h6 { 
