@@ -152,6 +152,7 @@ div[id^="eventsList-"] td,th{
     }
 	#column-left{ /*parent: main*/
 		height:10%; 
+		font-size: 0.9em;
 		display: flex; /* to center texts inside vertically and horizontally */
 		align-items: center; /* flex property */
 		justify-content: center; /* flex property */
