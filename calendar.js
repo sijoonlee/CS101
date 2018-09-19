@@ -18,7 +18,7 @@ const events = [ //month 0 means Jan // month 8 means Sep
     {year: 2018, month: 8, day: 20, type: "Summary", comment: "Quiz" },
     {year: 2018, month: 8, day: 26, type: "Function", comment: null },
     {year: 2018, month: 8, day: 27, type: "Function", comment: "Assignment 1 Due" },
-    {year: 2018, month: 9, day: 3, type: "No Lecture", comment: "TEST 1"}, //OCT
+    {year: 2018, month: 9, day: 3, type: "TEST day", comment: "TEST 1"}, //OCT
     {year: 2018, month: 9, day: 4, type: "Array", comment: null},
     {year: 2018, month: 9, day: 8, type: "No Class", comment: "Thanksgiving Day"},
     {year: 2018, month: 9, day: 10, type: "Array", comment: null },
@@ -32,7 +32,7 @@ const events = [ //month 0 means Jan // month 8 means Sep
     {year: 2018, month: 9, day: 26, type: "No Class", comment: "Break week" }, */
     {year: 2018, month: 9, day: 31, type: "Function(Advanced)", comment:null },
     {year: 2018, month: 10, day: 1, type: "Function(Advanced)", comment: "Assignment 2 Due" }, //NOV
-    {year: 2018, month: 10, day: 7, type: "No Lecture", comment: "TEST 2"},
+    {year: 2018, month: 10, day: 7, type: "TEST day", comment: "TEST 2"},
     {year: 2018, month: 10, day: 8, type: "Sorting Algorithm", comment:null },
     {year: 2018, month: 10, day: 14, type: "Bubble Sort", comment:null },
     {year: 2018, month: 10, day: 15, type: "Selection Sort", comment:null },
@@ -40,7 +40,7 @@ const events = [ //month 0 means Jan // month 8 means Sep
     {year: 2018, month: 10, day: 22, type: "Merge Sort", comment:null },
     {year: 2018, month: 10, day: 28, type: "Quick Sort", comment:null },
     {year: 2018, month: 10, day: 29, type: "Summary", comment:null },
-    {year: 2018, month: 11, day: 5, type: "No Lecture", comment: "TEST 3"}, //DEC
+    {year: 2018, month: 11, day: 5, type: "TEST day", comment: "TEST 3"}, //DEC
     {year: 2018, month: 11, day: 14, type: "No Class", comment: "Assignment 3 Due" },
     {year: 2018, month: 11, day: 17, type: "Semester Ends", comment:null }
 ];
@@ -97,8 +97,9 @@ function createCal(year, month, calId = "calendar", eventsListId="eventsList"){
 	markup = markup + "</table>";
 	
 	var tbl = document.getElementById(calId);
+	tbl.innerHTML = markup;  //put table into HTML
+	
 	var eventPage = document.getElementById(eventsListId);
-    tbl.innerHTML = markup;  //put table into HTML
     eventPage.innerHTML = ""; // initiation
 	markEventsOnCal(year, month, lastDay.getDate(), tbl);
     showEventsList(year,month, lastDay.getDate(), eventPage);
@@ -125,7 +126,7 @@ function markEventsOnCal(year, month, lastDate, tbl){
 function showEventsList(year, month, lastDate, eventPage){
 	var markup = `
 			<table><tr>
-				<th>Day</th><th>Topic</th><th>Special Occasions</th>
+				<th>Day</th><th>Lecture Topic</th><th>Quiz, Test</th>
 			</tr>`;
 	for(var i =1; i<lastDate+1;i++){
 		var found = events.find(item => (item.year === year) && (item.month === month) && (item.day === i));

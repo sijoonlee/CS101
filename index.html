@@ -12,7 +12,7 @@
 	<body onload='location.href="#box-1"'> <!-- show box-1 page by default --> 
 
 		<div id = "container">
-			<div id ="top"><h1>CS101 - 2018 Fall</h1></div>
+			<div id ="top"><h1>CS101</h1></div>
 			<div id ="main">
 				<div id ="column-left">
 					   <ul id="nav">
@@ -33,9 +33,9 @@
 						<div id="box-2">
 							<h1>CS101 Syllabus</h1>
 							<h2>Course Details</h2>
-								<p>See "Schedule" page</p>
+								<p>See <a href="#box-3">Schedule</a> page</p>
 							<h2>Grades</h2>
-								<table>
+								<table id="grades">
 									<tr><th>Type</th><th>Percent</th></tr>
 									<tr><td>Homeworks</td><td>30%</td></tr>
 									<tr><td>Tests</td><td>30%</td></tr>
@@ -43,15 +43,18 @@
 									<tr><td>Attendance</td><td>10%</td></tr>
 								</table>
 							<h2>Exams</h2>
-								<table>
+								<table id="exams">
 									<tr><th>Term</th><th>Topics</th></tr>
 									<tr><td>Midterm</td><td>Variable, Operator, Loop, Function</td></tr>
 									<tr><td>Final</td><td>Pointer, Array, Sorting algorithm</td></tr>
 								</table>
 							<h2>Honor Code</h2>
 								<p>Any kind of plagiarism is not allowed. Don't copy and paste. Use your own thoughts in your codes. </p>
-							<h2>Office Hours</h2>
-								<p>See "About" page</p>
+							<h2>Contact & Office Hours</h2>
+								<table id="contact">
+									<tr><th>Instructor</th><th>Office</th><th>Office Hour</th><th>Phone</th><th>E-mail</th></tr>
+									<tr><td>Nice Teacher</td><td>#A1100</td><td>Mon 10~11AM</td><td>611-111-1111</td><td>NT@abc.com</td></tr>
+								</table>
 						</div>
 						<div id="box-3">
 							<h1>2018 Fall Schedule</h1>
@@ -100,10 +103,11 @@
 								</div>
 								<div>
 								  <label class="long">How much do you feel satisfied with this homepage?</label>
-								    <p><input type="radio" name="satisfied" value="5" checked> &#9733;&#9733;&#9733;&#9733;&#9733;
-									<input type="radio" name="satisfied" value="4"> &#9733;&#9733;&#9733;&#9733;
-									<input type="radio" name="satisfied" value="3"> &#9733;&#9733;&#9733;
-									<input type="radio" name="satisfied" value="2"> &#9733;&#9733;
+								  <p>
+									<input type="radio" name="satisfied" value="3"> &#9733;&#9733;&#9733;&#9733;&#9733;&nbsp;
+									<input type="radio" name="satisfied" value="3"> &#9733;&#9733;&#9733;&#9733;&nbsp;
+									<input type="radio" name="satisfied" value="3"> &#9733;&#9733;&#9733;&nbsp;
+									<input type="radio" name="satisfied" value="2"> &#9733;&#9733;&nbsp;
 									<input type="radio" name="satisfied" value="1"> &#9733;</p>
 								</select>
 								</div>
@@ -115,20 +119,13 @@
 						</div>
 						<div id="box-5">
 							<h1>About</h1>
-								<table>
-								<tr><td></td><th>Instructor</th></tr>
-								<tr><th>Name</th><td>Prof. Nice Example</td></tr>
-								<tr><th>Office</th><td>Room#11111</td></tr>
-								<tr><th>Office Hour</th><td>Mon 10:00 ~ 12:00</td></tr>
-								<tr><th>Phone</th><td>600-100-1000</td></tr>
-								<tr><th>E-mail</th><td>niceexample@abc.com</td></tr>
-								</table>
+
 						</div>
 					</div>
 				</div>
 			</div>
 			<footer>
-				<p>webpage created by <a class="email" href="mailto:sijoon.lee@student.sl.on.ca">Sijoon Lee</a></p>
+				<p>webpage by Sijoon Lee <a class="email" href="mailto:sijoon.lee@student.sl.on.ca">&#9993;</a></p>
 			</footer>
 		</div>
 	</body>

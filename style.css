@@ -18,6 +18,7 @@
 	}*/
 body,html{
 	height:100%;
+	width:100%;
 	overflow-y:hidden;
 	margin:0;
 }
@@ -30,7 +31,7 @@ body,html{
 	width:100%;
 	min-width:370px;
 	height:15%;
-	min-height:3em;
+	min-height:4em;
 	display: flex; /* to center text vertically and horizontally */
     align-items: center; /* flex property */
     justify-content: center; /* flex property */
@@ -39,7 +40,7 @@ body,html{
 }
 
 #main{  /*parent: container*/
-	height:calc(85% - 2em);
+	height:calc(85% - 3em);
 }
 #column-left { /*parent: main*/
     float: left;
@@ -47,10 +48,7 @@ body,html{
 	height:100%;
 	min-height:2em;
 	background-color: rgb(50,50,50);
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	padding-left:0.5em;
-	padding-right:0.5em;
+	padding: 0.5em;
 	box-sizing:border-box;
 }
 #column-left #nav{
@@ -64,13 +62,13 @@ body,html{
 	margin:0.5em;
 	text-decoration:none;
 	font-weight: 600;
-	color:rgb(200,200,200);
+	color:rgb(150,150,150);
 	letter-spacing: 1px; 
 }
 
 #column-left #nav li a:hover{
-	background-color: rgb(100,100,100);
-	color: rgb(200,200,200);
+	color: rgb(220,220,220);
+	font-weight: 900;
 }
 
 #column-right { /*parent: main*/
@@ -108,13 +106,21 @@ reference: https://css-tricks.com/css3-tabs/
 	background-color: white; /*necessary to have a color to screen other boxes*/
 	z-index: 1;
 }
+table#grades td, table#grades th{
+	width:50%;
+}
+table#exams td, table#grades th{
+	width:50%;
+}
+
+
 #box-3:after{
     content: "";
     display: table;
     clear: both;
 }
 #box-3{
-		overflow-y:auto;
+	overflow-y:auto;
 }
 #box-3 h1, h2{
 	float:left;
@@ -184,7 +190,7 @@ footer{  /*parent: container*/
 	background-color: rgb(200,200,200);
 	width:100%;
 	min-width:370px;
-	height:2em;
+	height:3em;
 	display: flex; 
     align-items: center; /* flex property */
     justify-content: flex-end; /* flex property */
@@ -200,6 +206,7 @@ footer p{
 footer a.email{
 	text-decoration:none;
 	color:rgb(50,50,50);
+	font-size: 1.1em;
 }
 
 
@@ -217,6 +224,10 @@ h3, h4, h5, h6{
 
 #top h1, #box-1 h1, #box-2 h1, #box-3 h1, #box-4 h1, #box-5 h1{
 	margin:0;	
+}
+
+#top h1{
+	font-size: 3em;
 }
 
 #box-4 p{
