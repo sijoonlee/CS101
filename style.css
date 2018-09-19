@@ -112,6 +112,12 @@ table#grades td, table#grades th{
 table#exams td, table#grades th{
 	width:50%;
 }
+table#contacts td, table#contacts th{
+	width:33.3%;
+}
+table#officeHours td, table#officeHours th{
+	width:33.3%;
+}
 
 
 #box-3:after{
