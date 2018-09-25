@@ -21,6 +21,7 @@ body,html{
 	width:100%;
 	overflow-y:hidden;
 	margin:0;
+    font-family: Segoe UI;
 }
 #container{  /*parent: body*/
 		width:100%;
@@ -30,14 +31,18 @@ body,html{
 	margin:0em;
 	width:100%;
 	min-width:370px;
-	height:15%;
+	height:20%;
 	min-height:4em;
 	display: flex; /* to center text vertically and horizontally */
     align-items: center; /* flex property */
     justify-content: center; /* flex property */
-	background-color: rgb(20, 20, 20);
 	box-sizing:border-box;
+	background-image: url(background_resized.png);
+	background-size: cover;
+	background-position: left top;
+	background-repeat: no-repeat;
 }
+
 #top h1{
 	color: rgb(200,200,200);
 	font-size: 3em;
@@ -45,7 +50,7 @@ body,html{
 }
 
 #main{  /*parent: container*/
-	height:calc(85% - 3em);
+	height:calc(80% - 3em);
 }
 /* Clear floats after the columns */
 #main:after {
@@ -59,7 +64,7 @@ body,html{
     width: 20%;  
 	height:100%;
 	min-height:2em;
-	background-color: rgb(70,70,70);
+	background-color: rgb(59,62,68);
 	padding: 0.5em;
 	box-sizing:border-box;
 }
@@ -75,7 +80,9 @@ body,html{
 	text-decoration:none;
 	font-weight: 600;
 	color:rgb(210,210,210);
-	letter-spacing: 1px; 
+	letter-spacing: 1px;
+
+	
 }
 
 #column-left #nav li a:hover{

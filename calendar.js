@@ -1,9 +1,3 @@
-//import {sets} from './base';
-//import {elem} from './base';
-// make a monthly calendar given a certain month
-// var mCal = new MonthlyCal( year, month )
-// month : 0 = Jan
-
 const sets = {
     month : ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     week : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
